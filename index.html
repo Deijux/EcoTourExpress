@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTourExpress</title>
+    <link rel="stylesheet" href="./src/style/output.css">
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+</head>
+
+<body class="text-white scroll-smooth">
+    <!-- Header -->
+    <header id="header" class="fixed w-full flex justify-center ease-in-out duration-500 z-10">
+        <div class=" backdrop-blur-sm p-3 m-3 rounded-lg border-2 border-green-500">
+            <ul class="flex gap-5 justify-end">
+                <li>
+                    <a href="#main">Inicio</a>
+                </li>
+                <li>
+                    <a href="#content">Que ofrecemos</a>
+                </li>
+                <li>
+                    <a href="#">Planes</a>
+                </li>
+                <li>
+                    <a href="#">Sobre nosotros</a>
+                </li>
+                <li>
+                    <a id="btnLogin">Iniciar sesión</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main id="main" class="gap-20 grid">
+        <div class="h-screen w-full grid place-items-center content-center gap-6">
+            <img class="imgWelcome h-screen object-cover brightness-50 absolute -z-10 w-full" src="./assets/selva.jpg"
+                alt="background Image" />
+            <img class="max-w-24" src="./icon.png" alt="Logo" width="96px" height="96px" />
+            <h1 class="text-center text-3xl text-balance">
+                ¡Conoce tu próximo destino para disfrutar en familia!
+            </h1>
+            <div class="grid place-items-center relative top-24 gap-4">
+                <a class="text-2xl" href="#content">
+                    Ver más
+                </a>
+                <svg class="w-10 animate-bounce animate-infinite animate-ease-in-out" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+                </svg>
+            </div>
+        </div>
+        <div id="content" class="h-auto grid place-items-center content-center px-6 gap-5">
+            <div class="text-center">
+                <h2 class="font-bold text-2xl">
+                    ¿Que <span class="text-green-500">ofrecemos</span>?
+                </h2>
+                <p class="text-pretty max-w-sm">
+                    Servicio de restaurante, zona de descanso en hamacas, piscina de
+                    agua natural, actividades de deportes extremos (canyoning o rapel),
+                    cabalgata ecológica, camping, visita a la cueva Ibanasca,
+                    avistamiento de aves y cascadas.
+                </p>
+            </div>
+            <div>
+                <img class="rounded-2xl" src="assets/background.jpg" alt="Image" width="400" height="0" />
+            </div>
+        </div>
+        <div id="content" class="h-auto grid place-items-center content-center px-6 gap-5">
+            <div class="text-center">
+                <h2 class="font-bold text-2xl">
+                    Nuestras <span class="text-green-500">atracciones</span>
+                </h2>
+                <p class="text-pretty max-w-sm">
+                    Explora todas las atracciones que tenemos disponibles para que
+                    disfrutes y descanses de tu rutina!
+                </p>
+            </div>
+            <div>Aqui va las imagenes de las atracciones de forma deslizable</div>
+        </div>
+    </main>
+
+    <!-- Modal Login -->
+    <div id="modalLogin"
+        class="modal-container flex bg-opacity-50 bg-black items-center justify-center fixed pointer-events-none top-0 left-0 h-full w-full transition-opacity duration-300 z-20 opacity-0">
+        <div class=" bg-neutral-800 max-w-md p-9 rounded-md text-center mx-5 flex flex-col gap-6 relative pt-14 w-full">
+            <img src="./icon.png" alt="Icon EcoTourExpress" class="absolute w-24 -top-12 left-44">
+            <h1 class="text-4xl">Iniciar Sesión</h1>
+            <form action="#" class="flex flex-col gap-5">
+                <div class="flex flex-col items-start gap-1">
+                    <label for="emailLogin" class="text-lg">Correo electrónico</label>
+                    <input type="email" name="emailLogin" id="emailLogin" required
+                        class="w-full bg-transparent border-2 border-green-500 rounded p-1">
+                </div>
+                <div class="flex flex-col items-start gap-1">
+                    <label for="passwordLogin" class="text-lg">Contraseña</label>
+                    <input type="password" name="passwordLogin" id="passwordLogin" required
+                        class="w-full bg-transparent border-2 border-green-500 rounded p-1">
+                </div>
+                <div class="flex justify-center">
+                    <button type="submit" class="text-lg py-2 px-4 border-2 border-green-500 rounded">Ingresar</button>
+                </div>
+            </form>
+            <div class="flex flex-col gap-2">
+                <a href="#">¿Olvidó sus credenciales?</a>
+                <button class="btnChangeWindow">¿Eres nuevo? Crea una cuenta ahora mismo!</button>
+            </div>
+            <div class="closeButtons absolute right-3 top-3 cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 32 32">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" d="M9 23L23 9m0 14L9 9" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Register -->
+    <div id="modalRegister"
+        class="modal-container flex bg-opacity-50 bg-black items-center justify-center fixed pointer-events-none top-0 left-0 h-full w-full transition-opacity duration-300 z-20 opacity-0">
+        <div class=" bg-neutral-800 max-w-md p-9 rounded-md text-center mx-5 flex flex-col gap-6 relative pt-14 w-full">
+            <img src="./icon.png" alt="Icon EcoTourExpress" class="absolute w-24 -top-12 left-44">
+            <h1 class="text-4xl">Registro</h1>
+            <form action="#" class="flex flex-col gap-5">
+                <div class="flex flex-col items-start gap-1">
+                    <label for="nameRegister" class="text-lg">Nombre completo</label>
+                    <input type="text" name="nameRegister" id="nameRegister" required
+                        class="w-full bg-transparent border-2 border-green-500 rounded p-1">
+                </div>
+                <div class="flex flex-col items-start gap-1">
+                    <label for="emailRegister" class="text-lg">Correo electrónico</label>
+                    <input type="email" name="emailRegister" id="emailRegister" required
+                        class="w-full bg-transparent border-2 border-green-500 rounded p-1">
+                </div>
+                <div class="flex flex-col items-start gap-1">
+                    <label for="passwordRegister" class="text-lg">Contraseña</label>
+                    <input type="password" name="passwordRegister" id="passwordRegister" required
+                        class="w-full bg-transparent border-2 border-green-500 rounded p-1">
+                </div>
+                <div class="flex justify-center">
+                    <button type="submit" class="text-lg py-2 px-4 border-2 border-green-500 rounded">Crear
+                        cuenta</button>
+                </div>
+            </form>
+            <div class="flex flex-col gap-2">
+                <button class="btnChangeWindow">¿Ya tiene cuenta? inicie sesión aquí!</button>
+            </div>
+            <div class="closeButtons absolute right-3 top-3 cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 32 32">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" d="M9 23L23 9m0 14L9 9" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <script src="./src/js/main.js"></script>
+</body>
+
+</html>

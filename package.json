@@ -1,0 +1,27 @@
+{
+  "name": "ecotourexpress",
+  "version": "1.0.0",
+  "main": "./js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwindcss -i ./src/style/style.css -o ./src/style/output.css --watch"
+  },
+  "keywords": [],
+  "author": "deijux",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss-animated": "^1.0.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Deijux/EcoTourExpress.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Deijux/EcoTourExpress/issues"
+  },
+  "homepage": "https://github.com/Deijux/EcoTourExpress#readme",
+  "description": ""
+}
