@@ -103,7 +103,7 @@ const validarLogin = (e) => {
   } else if (!emailValido) {
     openAlert(
       "Error",
-      "El correo es invalido, recuera que la estrcutura es usuario@dominio.com"
+      "El correo es invalido, recuerda que la estructura es usuario@dominio.com"
     );
   } else {
     openAlert(
@@ -147,7 +147,7 @@ const validarRegistro = (e) => {
   } else if (!emailValido) {
     openAlert(
       "Error",
-      "El correo es invalido, recuera que la estrcutura es usuario@dominio.com"
+      "El correo es invalido, recuerda que la estructura es usuario@dominio.com"
     );
   } else {
     openAlert(
