@@ -38,3 +38,15 @@ header li:hover {
   transform: scale(1.1);
   text-shadow: 0px 0px 10px #ffff;
 }
+
+section:nth-child(2n + 2) {
+  direction: rtl;
+}
+
+section:nth-child(2n + 2) > div {
+  direction: ltr;
+}
+
+button:disabled {
+  border: #ffff 2px solid;
+}
