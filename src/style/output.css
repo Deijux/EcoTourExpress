@@ -675,6 +675,10 @@ video {
   left: 11rem;
 }
 
+.left-\[40px\] {
+  left: 40px;
+}
+
 .right-3 {
   right: 0.75rem;
 }
@@ -689,6 +693,18 @@ video {
 
 .top-3 {
   top: 0.75rem;
+}
+
+.left-\[40\%\] {
+  left: 40%;
+}
+
+.left-\[35\%\] {
+  left: 35%;
+}
+
+.left-\[38\%\] {
+  left: 38%;
 }
 
 .isolate {
